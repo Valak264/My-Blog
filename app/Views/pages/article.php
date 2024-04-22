@@ -4,7 +4,6 @@
             <div class="container">
                 <div class="container">
                     <h2><?php echo esc($title); ?></h2>
-                    <em class="text-muted">Created on April 18th 1987</em>
                 </div>
                 <div class="container mt-3">
                     <p><?php echo $article; ?></p>

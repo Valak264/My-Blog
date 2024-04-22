@@ -32,6 +32,14 @@ class Blog extends BaseController
         return view('template/header', $data) . view('pages/newArticle') . view('template/footer');
     }
 
+    public function aboutMe(): string {
+        if (!is_file(APPPATH . "Views/pages/aboutMe.php")) {
+            throw new PageNotFoundException('page');
+        }
+        $data['title'] = 'About Me';
+        return view('template/header', $data) . view('pages/aboutMe') . view('template/footer'); 
+    }
+
     public function article(int $id): string
     {
         if (!is_file(APPPATH . "Views/pages/article.php")) {

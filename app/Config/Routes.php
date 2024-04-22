@@ -10,6 +10,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', [Blog::class, 'index']);
 $routes->get('/articles/(:num)', [Blog::class, 'article']);
 $routes->get('/newArticle', [Blog::class, 'newArticle']);
+$routes->get('/aboutMe', [Blog::class, 'aboutMe']);
 $routes->post('/newArticle/save', [Blog::class, 'save']);
 
 service('auth')->routes($routes);

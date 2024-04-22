@@ -7,6 +7,11 @@
     <style>
     .card-width {
         width: 54rem;
+    }
+    .round-img {
+        width: 7cm;
+        height: 7cm;
+        border-radius: 4cm;
     }    
     footer {
         color: white;
