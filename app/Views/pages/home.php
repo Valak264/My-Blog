@@ -6,8 +6,8 @@
                 <?php foreach ($articles as $article) { ?>
             <div class="card mb-3">
                 <div class="card-body">
-                    <h3><?php echo esc($article['title']); ?></h3>
-                    <p><?php echo substr(esc($article['article']), 0, 200); ?>... <a href="/articles/<?php echo $article['id']; ?>">Read more</a></p>
+                    <h3><?php echo $article['title']; ?></h3>
+                    <p><?php echo substr($article['article'], 0, 200); ?>... <a href="/articles/<?php echo $article['id']; ?>">Read more</a></p>
                 </div>
             </div>
             <?php } ?>
