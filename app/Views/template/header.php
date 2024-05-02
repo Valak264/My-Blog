@@ -37,7 +37,7 @@
                         <a class="nav-link text-light" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">About Me</a>
+                        <a class="nav-link text-light" href="/aboutMe">About Me</a>
                     </li>
                     <?php if (auth()->loggedIn()): ?>
                         <li class="nav-item">
